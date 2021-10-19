@@ -1,4 +1,4 @@
-#include "module2.hpp"
+#include "Module2.hpp"
 #include <gtest/gtest.h>
 
 class TestModule2 : public ::testing::Test {
