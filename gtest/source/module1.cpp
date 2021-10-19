@@ -2,7 +2,7 @@
 
 using std::string;
 
-void getMsg( string& msgOut )
+void Module1::getStr( string& msgOut ) const
 {
-    msgOut = "Hello out";
+   msgOut = "Hello ";
 }

@@ -1,6 +1,6 @@
 #include <string>
 
-class Module1 {
+class Module2 {
  public:
    void getStr( std::string& msgOut ) const;
 };

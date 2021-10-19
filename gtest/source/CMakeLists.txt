@@ -1,1 +1,1 @@
-add_library(util STATIC module1.cpp)
+add_library(util STATIC module1.cpp module2.cpp)

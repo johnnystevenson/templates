@@ -1,6 +1,9 @@
 project(TODO)
 cmake_minimum_required(VERSION 3.16)
 
+# Output include paths to VS Code intellisense
+add_definitions(-DCMAKE_EXPORT_COMPILE_COMMANDS=ON)
+
 # Assumes libgtest-dev is installed
 # installGTest.sh is included to set up GTest on a new system
 find_package(GTest REQUIRED)
@@ -15,7 +18,7 @@ target_link_libraries(TODO util)
 
 enable_testing()
 
-add_executable( Test_TODO test/Test_Util.cpp )
+add_executable( Test_TODO test/Test_module1.cpp test/Test_module2.cpp )
 target_link_libraries(Test_TODO ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARY} pthread util)
 add_test( NAME Test_TODO
           COMMAND ./Test_TODO )
