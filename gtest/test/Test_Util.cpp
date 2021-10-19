@@ -1,4 +1,4 @@
-#include "util.hpp"
+#include "module1.hpp"
 #include <gtest/gtest.h>
 
 class TestFixture : public ::testing::Test {
@@ -23,5 +23,5 @@ TEST_F( TestFixture, Test1 )
 {
    std::string msg;
    getMsg( msg );
-   EXPECT_EQ( "Hello out2", msg );
+   EXPECT_EQ( "Hello out", msg );
 }
